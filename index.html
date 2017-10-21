@@ -2,4 +2,18 @@
 	
 <body>
 <h1>Locate Bentham</h1>
+	
+	  <h1>Our map</h1>
+  <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxfgX7gh8xsTZT_zO6klz__VqtRNvjhiw&callback=initMap"
+    async defer></script>
 </body>
